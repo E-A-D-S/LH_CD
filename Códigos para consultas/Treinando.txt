@@ -1,0 +1,22 @@
+CREATE OR REPLACE MODEL `xenon-aspect-393104.novo.iniciando_treinamento`
+
+OPTIONS
+ (model_type='linear_reg',
+ input_label_cols=['preco']
+ ) AS
+
+SELECT
+
+marca,
+modelo,
+versao,
+ano_de_fabricacao,
+cambio,
+tipo,
+tipo_vendedor,
+cidade_vendedor,
+estado_vendedor,
+anunciante,
+preco
+
+FROM `xenon-aspect-393104.novo.treinando`

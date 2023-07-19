@@ -46,7 +46,6 @@ FROM
  (
 SELECT
 
-id,
 marca,
 modelo,
 versao,
@@ -75,7 +74,6 @@ FROM
  (
 SELECT
 
-id,
 marca,
 modelo,
 versao,

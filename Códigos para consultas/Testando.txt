@@ -1,0 +1,20 @@
+SELECT
+*
+FROM
+  ML.EVALUATE(MODEL`xenon-aspect-393104.novo.iniciando_treinamento`,
+ (
+SELECT
+
+marca,
+modelo,
+versao,
+ano_de_fabricacao,
+cambio,
+tipo,
+tipo_vendedor,
+cidade_vendedor,
+estado_vendedor,
+anunciante,
+preco
+
+FROM`xenon-aspect-393104.novo.testando`))
